@@ -35,7 +35,7 @@ class PrintedBook(Book):
 
     def repair(self):
         con_list = ["новая", "хорошая", "плохая"]
-        if (self.condition in con_list) and (self.condition != "новая"):
+        if self.condition in con_list and self.condition != "новая":
             self.condition = con_list[con_list.index(self.condition) - 1]
 
 
