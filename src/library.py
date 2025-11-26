@@ -1,3 +1,4 @@
+"""Library management system"""
 class Book:
     def __init__(self, title, author, year, available):
         self.__title = title
