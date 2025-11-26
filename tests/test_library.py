@@ -2,7 +2,8 @@
 import sys
 import os
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
+# Добавляем путь к вашей библиотеке
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
 from actions_demo.library import Book, PrintedBook, EBook, User, Librarian, Library
 
